@@ -1,6 +1,6 @@
 # GAN 
 The GAN algorithm involves the interplay of two adversaries namely generator and discriminator. In this the generator tries to generate points such that they closely resemble to the point in the original distribution. While a discriminator tries to judge the truthfull ness of the points(if they are generated from original distribution or not).  We train the discriminator  just like  the way we would train any network using both true and false (generated) samples to learn. But for generator we feed the sample generated, through the disciminator to spot the fake and backpropagate the error through the discriminator and the generator.
-## Function $f(x)$ to generate true samples:
+## Function f(x) to generate true samples:
 \begin{equation}
     f(x) = 0.4\mathcal{N}(0,4)+0.3\mathcal{N}(-6,4)+0.3\mathcal{N}(6,4)
 \end{equation}
